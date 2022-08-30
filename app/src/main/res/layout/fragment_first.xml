@@ -5,147 +5,159 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
         >
-        >
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="79dp"
             android:gravity="center"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/textview_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Código:     "
-                />
+                android:textSize="16sp" />
+
             <EditText
-                android:width="500px"
+                android:id="@+id/inputCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="xxx"
-                android:id="@+id/inputCode"
-                >
+                android:width="500px"
+                android:hint="Ingrese código">
 
             </EditText>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="78dp"
             android:gravity="center"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/textview_second"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Producto:  "
-                />
+                android:textSize="16sp" />
+
             <EditText
-                android:width="500px"
+                android:id="@+id/inputProduct"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="123"
-                android:id="@+id/inputProduct"
-                >
+                android:width="500px"
+                android:hint="Nombre del producto">
 
             </EditText>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="78dp"
             android:gravity="center"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/textview_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Precio:          "
-                />
+                android:textSize="16sp" />
+
             <EditText
-                android:width="500px"
+                android:id="@+id/inputPrecio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="123"
-                android:id="@+id/inputPrecio"
-                >
+                android:width="500px"
+                android:hint="valor">
 
             </EditText>
         </LinearLayout>
+
         <Button
             android:id="@+id/button_Save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="169dp"
+            android:layout_height="66dp"
             android:layout_marginTop="100px"
+            android:background="#F1F1F1"
             android:text="Guardar">
 
 
         </Button>
 
 
-
-    <TextView
+        <TextView
             android:id="@+id/textview_first"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
             android:text="Productos"></TextView>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="51dp"
             android:gravity="center"
+            android:orientation="horizontal"
             tools:ignore="MissingConstraints">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/textViewCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Código: "
-                android:textSize="35px"
-                ></TextView>
+                android:textSize="35px"></TextView>
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/valueCode"
-                android:text="-- "
-                android:textSize="35px"
-                ></TextView>
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="-- "
+                android:textSize="35px"></TextView>
+
+            <TextView
                 android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Producto: "
-                android:textSize="35px"
-                ></TextView>
+                android:textSize="35px"></TextView>
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/valueName"
-                android:text="-- "
-                android:textSize="35px"
-                ></TextView>
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="-- "
+                android:textSize="35px"></TextView>
+
+            <TextView
                 android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Precio: "
-                android:textSize="35px"
-                >
+                android:textSize="35px">
 
             </TextView>
+
             <TextView
+                android:id="@+id/valuePrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/valuePrice"
                 android:text="-- "
-                android:textSize="35px"
-                ></TextView>
+                android:textSize="35px"></TextView>
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:src="@drawable/and" />
 
     </LinearLayout>
 
